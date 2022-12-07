@@ -105,7 +105,7 @@ function passwordPhase() {
         passwordField.focus()
         // check if user enters correct password
         passwordField.addEventListener("keyup", event => {
-            if (passwordField.value == "12345") {
+            if (passwordField.value == "taktus") {
                 console.log("login was successful");
                 passwordDialog.remove();
                 clearInterval(timer)
