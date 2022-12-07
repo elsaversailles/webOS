@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Windows 11 by Rajaniraiyn</title>
+    <title>WebOS 1.0</title>
     <meta name="description" content="A simple Windows 11 experience within browser.">
     <link rel="shortcut icon" href="src/icons/favicon.png" sizes="152x152">
     <link rel="apple-touch-icon" href="src/icons/favicon.png">
@@ -69,13 +69,13 @@
     </script>-->
     <!-- password dialog -->
     <div class="passwordDialog">
-        <div class="userProfile"><img src="src/icons/user.svg" alt="User Profile"></div>
-        <div class="username">User Name</div>
+        <div class="userProfile"><img src="src/icons/user.jpeg" alt="User Profile"></div>
+        <div class="username">Elsa</div>
         <div class="sign-in-content">
             <div class="sign-in-method active" id="method_1" data-tab-info>
-                <input type="password" placeholder="PIN" id="passwordField">
-                <span class="hint">Your password is: 12345</span>
-                <div class="forgotOption">I forgot my pin</div>
+                <input type="password" placeholder="Password" id="passwordField">
+                <span class="hint">Your cat name</span> <!-- to change pass go to boot.js -->
+                <div class="forgotOption">I forgot my password</div>
             </div>
             <div class="sign-in-method" id="method_2" data-tab-info>
                 <img src="src/others/helloSearching.webp" width="50" style="margin-block-end: 10px;filter:blur(.5px)">
@@ -106,8 +106,8 @@
     <!-- Lock Screen Box -->
     <div id="lockScreen">
         <div id="timeBox">
-            <span class="time">02:55</span>
-            <span class="date">Thursday, June 2017</span>
+            <span class="time">Welcome!</span>
+            <span class="date">Elsa Versailles</span>
         </div>
     </div>
 
@@ -174,17 +174,33 @@
                 <figcaption class="iconName">This PC</figcaption>
             </figure>
             <!-- desktop icon 2 -->
-            <figure id="deskvscode" onclick="executeProgram('vscode')">
+            <figure id="deskvscode" onclick="window.open('https://elsaversailles-programming-stuffs-wxvp6pj66v2vrv.github.dev/','_blank')">
                 <img src="src/icons/vscode.png" alt="Visual Studio Code Icon">
                 <figcaption class="iconName">Visual Studio Code</figcaption>
             </figure>
             <!-- desktop icon 3 -->
-            <figure id="deskbrowser" onclick="executeProgram('msedge')">
-                <!-- <button onclick = "OCBROWSER()" id = "browserbtn" class = "Iconshell"> -->
-                <img src="src/icons/edge.svg" alt="Microsoft Edge Icon">
-                <figcaption class="iconName">Microsoft Edge</figcaption>
-                <!-- </button> -->
+            <figure id="github" onclick="window.open('https://github.com/elsaversailles','_blank')">
+                <img src="src/icons/github.png" alt="Launches Github on New Tab">
+                <figcaption class="iconName">Github</figcaption>
             </figure>
+            <!-- desktop icon 4 -->
+            <figure id="office365" onclick="window.open('https://office.com','_blank')">
+                <img src="src/icons/office365.png" alt="Launches Office 365 on New Tab">
+                <figcaption class="iconName">Office</figcaption>
+            </figure>
+            <figure id="neolms" onclick="window.open('https://firstcityprovidentialcollege.neolms.com/','_blank')">
+                <img src="src/icons/neo.png" alt="Opens Neo Lms in New Tab">
+                <figcaption class="iconName">Neo</figcaption>
+            </figure>
+            <figure id="youwrite" onclick="window.open('https://you.com/search?q=how+to+write+well&&tbm=youwrite&cfr=write&','_blank')">
+                <img src="src/icons/youwrite.png" alt="Opens You Write in New Tab">
+                <figcaption class="iconName">YouWrite</figcaption>
+            </figure>
+            <figure id="chatgpt" onclick="window.open('https://chat.openai.com/chat','_blank')">
+                <img src="src/icons/openai.webp" alt="Opens ChatGPT in New Tab">
+                <figcaption class="iconName">ChatGPT</figcaption>
+            </figure>
+
         </div>
     </div>
 
@@ -284,8 +300,8 @@
         </div>
         <div class="others">
             <div class="user">
-                <img src="src/icons/user.png" alt="Windows 11 User icon">
-                <span>Rajaniraiyn</span>
+                <img src="src/icons/user.jpeg" alt="Windows 11 User icon">
+                <span>Elsa Versailles</span>
             </div>
             <a href="src/redirects/shutdown/logoff.html"><img src="src/icons/shutdown.svg" alt="Windows 11 Shutdown icon" id="shutdown"></a>
         </div>
@@ -348,7 +364,7 @@
                     <img src="src/icons/accessability.svg" alt="Accessability Icon">
                     <img src="src/icons/right.svg" alt="Right Icon">
                 </div>
-                <figcaption>Accessability</figcaption>
+                <figcaption>Accessibility</figcaption>
             </figure>
         </div>
         <div class="sliders">
