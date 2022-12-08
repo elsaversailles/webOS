@@ -24,12 +24,17 @@ document.addEventListener("click", (e) => {
 });
 
 // for Date Time
-let dt = new Date().toLocaleString().split(", ");
-document.querySelector(".time-date > span:nth-child(2)").innerText = dt[0];
-document.querySelector(".time-date > span:nth-child(1)").innerText = dt[1];
+// for Date Time
+let time = new Date().toLocaleTimeString().split(":");
+let ampm = (new Date().getHours() < 12) ? "AM" : "PM";
+document.querySelector(".time-date > span:nth-child(2)").innerText = time[0] + ":" + time[1] + " " + ampm;
 setInterval(() => {
-    document.querySelector(".time-date > span:nth-child(1)").innerText = new Date().toLocaleString().split(", ")[1];
+    let time = new Date().toLocaleTimeString().split(":");
+    let ampm = (new Date().getHours() < 12) ? "AM" : "PM";
+    document.querySelector(".time-date > span:nth-child(2)").innerText = time[0] + ":" + time[1] + " " + ampm;
 }, 1e3)
+
+
 
 // for Battery Saver Icons
 let bIcon1 = document.querySelector(".taskbar .right .action-center-button > img:nth-child(3)")
