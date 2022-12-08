@@ -37,12 +37,12 @@ tippy('#widgetsIcon', {
     delay: [1000, 100]
 });
 tippy('#teamsIcon', {
-    content: 'Microsoft Teams',
+    content: 'Google Meet',
     theme: 'light',
     delay: [1000, 100]
 });
 tippy('#filesIcon', {
-    content: 'File Explorer',
+    content: 'Google Drive',
     theme: 'light',
     delay: [1000, 100]
 });
@@ -73,7 +73,7 @@ tippy('#shutdown', {
     delay: [1000, 100]
 });
 tippy('.user', {
-    content: 'Rajaniraiyn',
+    content: 'Elsa',
     placement: 'top',
     theme: 'light',
     delay: [1000, 100]
